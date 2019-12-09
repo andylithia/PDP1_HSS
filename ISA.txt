@@ -1,0 +1,38 @@
+40	add	AC=AC+Y
+42	sub	AC=AC-Y
+54	mul	
+56	div
+44	idx
+46	isp
+02	and
+06	xor
+04	ior
+20	iac
+24	dac
+26	dap
+30	dip
+22	lio
+32	dio
+34	dzm
+10	xct
+60	jmp
+62	jsp
+16	cal
+17	jda
+50	sad
+52	sas
+70	law
+66	sft	Shift Group
+671	rar
+661	ral
+675	sar
+665	sal
+672	rir
+662	ril
+676	sir
+666	sil
+673	rcr
+663	rcl
+677	scr
+667	scl
+
