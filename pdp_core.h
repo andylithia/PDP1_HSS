@@ -9,5 +9,6 @@
 
 void PDP_step();
 void PDP_jump(uint16_t addr);
+void PDP_dispatch(uint32_t md);
 
 #endif /* _PDP_CORE_H */
