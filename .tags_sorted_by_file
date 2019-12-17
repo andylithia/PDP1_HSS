@@ -1,0 +1,100 @@
+ADD	PDP_ISA.h	12;"	d
+AND	PDP_ISA.h	1;"	d
+CALJDA	PDP_ISA.h	5;"	d
+DAC	PDP_ISA.h	8;"	d
+DAP	PDP_ISA.h	9;"	d
+DIO	PDP_ISA.h	10;"	d
+DISDIV	PDP_ISA.h	19;"	d
+DZM	PDP_ISA.h	11;"	d
+IDX	PDP_ISA.h	14;"	d
+IOR	PDP_ISA.h	2;"	d
+IOT	PDP_ISA.h	25;"	d
+ISP	PDP_ISA.h	15;"	d
+JMP	PDP_ISA.h	20;"	d
+JSP	PDP_ISA.h	21;"	d
+LAC	PDP_ISA.h	6;"	d
+LAW	PDP_ISA.h	24;"	d
+LIO	PDP_ISA.h	7;"	d
+MUSMUL	PDP_ISA.h	18;"	d
+OPR	PDP_ISA.h	26;"	d
+SAD	PDP_ISA.h	16;"	d
+SAS	PDP_ISA.h	17;"	d
+SFT	PDP_ISA.h	23;"	d
+SKP	PDP_ISA.h	22;"	d
+SUB	PDP_ISA.h	13;"	d
+XCT	PDP_ISA.h	4;"	d
+XOR	PDP_ISA.h	3;"	d
+GLOBAL	gvar.h	2;"	d
+GLOBAL	gvar.h	4;"	d
+PDP_clearTC	pdp_core.c	/^void PDP_clearTC(){ msecs = 0; }$/;"	f
+PDP_dispatch	pdp_core.c	/^void PDP_dispatch(uint32_t md) {$/;"	f
+PDP_getControl	pdp_core.c	/^uint32_t PDP_getControl() { return control; }$/;"	f
+PDP_getPC	pdp_core.c	/^uint32_t PDP_getPC(){ return pc; }$/;"	f
+PDP_getSense	pdp_core.c	/^uint8_t PDP_getSense() { return sense; }$/;"	f
+PDP_getTC	pdp_core.c	/^uint8_t PDP_getTC(){ return msecs; }$/;"	f
+PDP_getTestWord	pdp_core.c	/^uint32_t PDP_getTestWord() { return testword; }$/;"	f
+PDP_initialize	pdp_core.c	/^void PDP_initialize(){$/;"	f
+PDP_mountTape	pdp_core.c	/^void PDP_mountTape(tape_t* tape){$/;"	f
+PDP_resetMem	pdp_core.c	/^void PDP_resetMem(){$/;"	f
+PDP_resetRegs	pdp_core.c	/^void PDP_resetRegs(){$/;"	f
+PDP_setCRTCallback	pdp_core.c	/^void PDP_setCRTCallback(void(*cb)(uint16_t, uint16_t, uint16_t)){plotCRTPtr=cb;}$/;"	f
+PDP_setControl	pdp_core.c	/^void PDP_setControl(uint8_t n, uint8_t v) {$/;"	f
+PDP_setFrame	pdp_core.c	/^void PDP_setFrame(uint8_t d){$/;"	f
+PDP_setMergeControls	pdp_core.c	/^void PDP_setMergeControls(uint8_t d){$/;"	f
+PDP_setMulDiv	pdp_core.c	/^void PDP_setMulDiv(uint8_t d){$/;"	f
+PDP_setPC	pdp_core.c	/^void PDP_setPC(uint32_t addr){ pc = addr; }$/;"	f
+PDP_setRotateControls	pdp_core.c	/^void PDP_setRotateControls(uint8_t d){$/;"	f
+PDP_setSense	pdp_core.c	/^void PDP_setSense(uint8_t n, uint8_t v) {$/;"	f
+PDP_setTestWord	pdp_core.c	/^void PDP_setTestWord(uint8_t n, uint8_t v) {$/;"	f
+PDP_setTrapCallback	pdp_core.c	/^void PDP_setTrapCallback(void(*cb)(void*)){trapPtr=cb;}$/;"	f
+PDP_step	pdp_core.c	/^uint32_t PDP_step(){$/;"	f
+PDP_tapeReadIn	pdp_core.c	/^void PDP_tapeReadIn() {$/;"	f
+ac	pdp_core.c	/^uint32_t ac, io, pc, y, ib, ov;$/;"	v
+control	pdp_core.c	/^uint32_t control = 0;$/;"	v
+ctc	pdp_core.c	/^uint32_t ctc = 0;$/;"	v
+dpy	pdp_core.c	/^void dpy() {$/;"	f
+flags	pdp_core.c	/^uint8_t flags = 0;$/;"	v
+halt_sst	pdp_core.c	/^uint8_t halt_sst = 0;$/;"	v
+ib	pdp_core.c	/^uint32_t ac, io, pc, y, ib, ov;$/;"	v
+io	pdp_core.c	/^uint32_t ac, io, pc, y, ib, ov;$/;"	v
+ioc	pdp_core.c	/^uint32_t ioc = 0;$/;"	v
+memory	pdp_core.c	/^uint32_t memory[4096];$/;"	v
+msecs	pdp_core.c	/^uint32_t msecs = 0;$/;"	v
+ov	pdp_core.c	/^uint32_t ac, io, pc, y, ib, ov;$/;"	v
+pc	pdp_core.c	/^uint32_t ac, io, pc, y, ib, ov;$/;"	v
+pdp_countdown	pdp_core.c	/^uint8_t pdp_countdown;	\/\/ System Cycle Count-down$/;"	v
+plotCRTPtr	pdp_core.c	/^void (*plotCRTPtr)(uint16_t x, uint16_t y, uint16_t i);	\/\/ CRT Callback Pointer$/;"	v
+sense	pdp_core.c	/^uint8_t sense = 0;$/;"	v
+settings	pdp_core.c	/^uint8_t settings = 0; $/;"	v
+status	pdp_core.c	/^uint8_t status = 0;$/;"	v
+tapeReadAlpha	pdp_core.c	/^int32_t tapeReadAlpha(uint8_t rtb) {$/;"	f
+tapeReadBin	pdp_core.c	/^int32_t tapeReadBin(uint8_t rtb){$/;"	f
+tapeReadBuffer	pdp_core.c	/^int32_t tapeReadBuffer() {$/;"	f
+tapeReadIn	pdp_core.c	/^int32_t tapeReadIn(uint32_t* mem){$/;"	f
+tapeReset	pdp_core.c	/^void tapeReset(){$/;"	f
+tbuf	pdp_core.c	/^uint32_t tbuf;$/;"	v
+tdata	pdp_core.c	/^uint8_t* tdata;$/;"	v
+testword	pdp_core.c	/^uint8_t testword = 0;$/;"	v
+tpos	pdp_core.c	/^uint16_t tpos;$/;"	v
+trapPtr	pdp_core.c	/^void (*trapPtr)(void* arg);	\/\/ Trap Callback Function Pointer$/;"	v
+tsize	pdp_core.c	/^uint16_t tsize;$/;"	v
+y	pdp_core.c	/^uint32_t ac, io, pc, y, ib, ov;$/;"	v
+PDP_M	pdp_core.h	5;"	d
+_PDP_CORE_H	pdp_core.h	2;"	d
+name	pdp_core.h	/^	uint8_t* name;$/;"	m	struct:__anon1
+startAddr	pdp_core.h	/^	uint32_t startAddr;$/;"	m	struct:__anon1
+tapeLeng	pdp_core.h	/^	uint8_t tapeLeng,$/;"	m	struct:__anon1
+tape_t	pdp_core.h	/^} tape_t;$/;"	t	typeref:struct:__anon1
+tape_dpys5_d	pdp_tapes.c	/^uint8_t tape_dpys5_d[] = "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAmr+pu4CCmr+qmr+wmr+riL+wmr+smr++mr+tu4CCmr+umr+\/mr+vu4CCmr+wgICAmr+xkb+wmr+yoL++mr+zlL++mr+0pL+wmr+1qr+\/mr+2sL+vmr+3kL++mr+4oL+\/mr+5u4CCmr+6mr++mr+7qr++mr+8voSAmr+9sL+psL+pAAAAAACagICagIW+gIC+gIC+gIC+gICwhqOchq0AAAAAAJqAiJqBgLiDh5SCrLiDv5SCrY+Bh5WCrJuCraSCrKSCraqCu7CAjLmAoJSCrpGCrJSCr5GCrZSCsLmAgaCCrJSCrLmAgaCCrZSCraiCvLCApY+BlpWCrJuCrbCAmZGCrJSCr5GCrZSCsKSCrKSCraiCvbCAsY+BlpWCrJuCrbCAqaaCrrCAvY+Bh5SDh5qDv4+Bh5SDvpqEto+Bh5SDmpqEmrCBgpCCqpSDmpCCq7GEmgAAAAAAmoGAmoKAlISasICVgoK+voiAlIKusICVgICAgICAloGGkIKqrIK\/t5CBmoKqkIKrrIK\/t5CBmoKroIKqlIKqtpiPsYGGgICAgICAloGVtIiAvoKAkYKtoIKwtIiAsIGgt6iBsIGjhoOAt6iBhoOBlIKwkYKsoIKvtIiAsIGqt6iBsIGthoOAt6iBhoOBlIKvkoKwlIKzmoK0t6iBlIKxkIK0t6iBlIKykIKzrIOClIK1kIK0rIOClIK2kIK1ooKylIK3voiAhoeZAAAAAACagoCag4CUgriQgrWggrKUgrm+iICUgrqQgraigrGSgrm7g4e+iIC7g4e+iICSgrq7g4e+iIC7g4eQgrGggraSgre7g4e+iIC7g4eSgri7g4e+iIC7g4eQgrS+iIC2n7+2n7+QgrO7g4e+iIC7g4eSgrS7g4e+iIC7g4eQgq+SgrCxgZWqgLOdh52AgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAhLeAg7+AhLaAgLyelqOWlJwAAAAAAJqDgJqDg5+\/v6+\/v5utpp+zqQAAAAAAmoS5moWAgICAvpKAqoS\/tYGAuLWjsYS5v7+\/u5yYAAAAAACahYCahoC+koC2n7+2n7+yhoCUhp2yhoCUhp6yhoCUhp+yhoCUhqCyhoCUhqGyhoCUhqKQhpGUhpeQhpKUhpiQhpOUhpmQhpSUhpqQhpWUhpuQhpaUhpyQhpeghpiIhp2ghpqUhpqihpuIhp6+iICghpeUhpeShpq6gIeQhpiihpmIhp+ghpuUhpuihpyIhqC+iICghpiUhpiShpu6gIeQhpmihpeIhqGghpyUhpyihpqIhqK+iICghpmUhpmShpy6gIewhZuRkrgAAAAAAJqGgJqGrpaGhr6CgLaYh6CGh5aGhZCGhbCGhoCGiLeogbeog7eoh7eoj7eon7eov7epv7erv7evv72\/v4CAgIKAgICAgISAgICAgICAgICAgICAgICAgICAgICAgL6EgL6EgL6EgL6EgL6EgL6EgL6SgKqGrbWBgLiTpaCAh5SAh7afv4aAh7qDh7CGo7+\/v5KyuAAAAAAAsICIAA==";$/;"	v
+tape_snowflake	pdp_tapes.c	/^tape_t tape_snowflake = {$/;"	v
+_PDP_TAPES	pdp_tapes.h	2;"	d
+name	pdp_tapes.h	/^	uint8_t* name;$/;"	m	struct:__anon2
+startAddr	pdp_tapes.h	/^	uint32_t startAddr;$/;"	m	struct:__anon2
+tapeLeng	pdp_tapes.h	/^	uint8_t tapeLeng,$/;"	m	struct:__anon2
+tape_t	pdp_tapes.h	/^} tape_t;$/;"	t	typeref:struct:__anon2
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_PROGRAM_VERSION	5.8	//
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
